@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    /* CONFIGURACIÓN DE IMAGEN DE FONDO */
+    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu imagen de fondo */
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-color: #000000; /* Color de respaldo */
+    
+    color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 20px 0; 
+    font-size: 14px; 
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+    text-align: center; 
+    padding: 15px; 
+    box-sizing: border-box;
+    position: relative; 
+    z-index: 10; 
+}
+
+/* Logo principal (Ajustado para la nueva imagen cuadrada/rectangular) */
+.logo-wrapper {
+    width: 85%; 
+    margin: 0 auto 15px auto; 
+    overflow: hidden;
+    border-radius: 15px; /* Bordes redondeados sutiles */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    border: 3px solid #ffcc00; /* Borde dorado para resaltar */
+}
+
+.main-logo {
+    width: 100%;
+    display: block; 
+    object-fit: cover;
+}
+
+/* Recuadro del Título con flechas fuera */
+.circular-title {
+    font-size: 1.2em; 
+    font-weight: 900;
+    color: #ffffff;
+    background-color: rgba(0, 100, 0, 0.85); /* Verde oscuro semi-transparente */
+    border: 2px solid #ffcc00; /* Borde dorado */
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    margin: 15px auto 30px auto; 
+    max-width: 95%; 
+    display: inline-block; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    line-height: 1.2; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Botón de WhatsApp */
+.buttons-group {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px; 
+    border-radius: 50px; 
+    text-decoration: none;
+    font-size: 1.4em; 
+    font-weight: 900; 
+    transition: all 0.3s ease;
+    color: white; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.05em; 
+    width: 90%; 
+    max-width: 350px;
+}
+
+.social-btn i {
+    margin-right: 10px; 
+}
+
+.whatsapp-btn {
+    background-color: #25D366; 
+}
+
+.whatsapp-btn:hover {
+    background-color: #1DA851;
+    transform: scale(1.05);
+}
